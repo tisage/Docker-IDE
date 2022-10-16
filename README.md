@@ -10,6 +10,12 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 - Build docker images
 - Push on Docker Hub
 
+## images info
+| image | Tag | Description |
+| ------ | ----- | ----------- |
+| tisage/ide | code-server	| Python + code-server image |
+
+
 2022
 
 v 1.0
