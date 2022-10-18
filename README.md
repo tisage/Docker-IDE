@@ -13,8 +13,11 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 ## images info
 | image | Tag | Description |
 | ------ | ----- | ----------- |
+| tisage/ide | test	| Testing image |
 | tisage/ide | code-server	| Python + code-server image |
 
+## Installation
+See the setup.md file.
 
 2022
 
