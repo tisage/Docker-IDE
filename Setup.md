@@ -32,4 +32,5 @@
 
 `docker compose version`
 
-## Plan I: Use Image
+## Plan I: Use Docker Image
+docker run -d --name=code-server -p 80:8080 -e PASSWORD={YOUR_PASSWORD} -v $(pwd)/:/home/coder --restart unless-stopped tisage/ide:test

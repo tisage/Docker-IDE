@@ -7,8 +7,8 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 ### Web IDE
 - Based on [Code Server](https://github.com/coder/code-server).
 - Support dependencies for different programming languages
+- Build from docker image
 - Support VS Code extensions
-- Build docker images
 
 ### Platform Coder
 - Based on [Coder](https://github.com/coder/coder).
@@ -18,19 +18,20 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 | image | Tag | Description |
 | ------ | ----- | ----------- |
 | tisage/ide | test	| Testing |
-| tisage/ide | code-server	| Python + code-server image |
-
 | image | Tag | Description |
 | ------ | ----- | ----------- |
 | tisage/coder | test	| Testing |
 
 
 ## Installation
-See the setup.md file.
 
+`docker run -d --name=code-server -p 80:8080 -e PASSWORD={YOUR_PASSWORD} -v $(pwd)/:/home/coder --restart unless-stopped tisage/ide:test`
+
+See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file.
+
+**Extension bug**: need to install extension manually after running the container instance
 
 
 2022
 
-v 0.5
-Dr. Tianyu Wang
+v 0.8
