@@ -25,8 +25,16 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 
 
 ## Installation
-`docker run -d --name=code-server -p 80:8080 -e PASSWORD={YOUR_PASSWORD} -v $(pwd)/:/home/coder --restart unless-stopped tisage/ide:test`
+Create a folder `ide` to mount
+`mkdir ide`
 
+### Linux/Mac OS
+`docker run -d --name=code-server -p 80:8080 -e PASSWORD=YOUR_PASSWORD -v $(pwd)/:/home/coder --restart unless-stopped tisage/ide:test`
+
+### Windows OS Command Line
+docker run -d --name=code-server -p 80:8080 -e PASSWORD=YOUR_PASSWORD -v %cd%/ide/:/home/coder --restart unless-stopped tisage/ide:test
+
+## Setup
 See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file.
 
 **Extension bug**: need to install extension manually after running the container instance
