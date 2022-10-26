@@ -18,13 +18,13 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 | image | Tag | Description |
 | ------ | ----- | ----------- |
 | tisage/ide | test	| Testing |
+
 | image | Tag | Description |
 | ------ | ----- | ----------- |
 | tisage/coder | test	| Testing |
 
 
 ## Installation
-
 `docker run -d --name=code-server -p 80:8080 -e PASSWORD={YOUR_PASSWORD} -v $(pwd)/:/home/coder --restart unless-stopped tisage/ide:test`
 
 See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file.
