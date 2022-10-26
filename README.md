@@ -28,11 +28,16 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 Create a folder `ide` to mount
 `mkdir ide`
 
+Change the `YOUR_PASSWORD` which will be used to login the web app.
 ### Linux/Mac OS
 `docker run -d --name=code-server -p 80:8080 -e PASSWORD=YOUR_PASSWORD -v $(pwd)/:/home/coder --restart unless-stopped tisage/ide:test`
 
 ### Windows OS Command Line
-docker run -d --name=code-server -p 80:8080 -e PASSWORD=YOUR_PASSWORD -v %cd%/ide/:/home/coder --restart unless-stopped tisage/ide:test
+`docker run -d --name=code-server -p 80:8080 -e PASSWORD=YOUR_PASSWORD -v %cd%/ide/:/home/coder --restart unless-stopped tisage/ide:test`
+
+### Windows OS PowerShell
+`docker run -d --name=code-server -p 80:8080 -e PASSWORD=YOUR_PASSWORD -v ${PWD}/ide/:/home/coder --restart unless-stopped tisage/ide:test`
+
 
 ## Setup
 See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file.
