@@ -23,6 +23,9 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 | ------ | ----- | ----------- |
 | tisage/coder | test	| Testing |
 
+## Requirement
+- Docker (See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file)
+- A Web Port
 
 ## Installation
 Create a folder `ide` to mount
@@ -38,9 +41,8 @@ Change the `YOUR_PASSWORD` which will be used to login the web app.
 ### Windows OS PowerShell
 `docker run -d --name=code-server -p 80:8080 -e PASSWORD=YOUR_PASSWORD -v ${PWD}/ide/:/home/coder --restart unless-stopped tisage/ide:test`
 
-
-## Setup
-See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file.
+Open host IP's port `80` 
+(default use `80`, can customize other port number)
 
 **Extension bug**: need to install extension manually after running the container instance
 
