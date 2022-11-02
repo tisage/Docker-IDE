@@ -3,7 +3,7 @@ This is a repo for a FDG Project: *Implementation of Cloud & Dockerization Techn
 
 The goal is to deploy an IDE web app on local/remote server/VM using docker containers. Students in programming class can also access the IDE during the class and Q & A session.
 
-[]()
+![UI](https://raw.githubusercontent.com/tisage/Docker-IDE/main/archive/UI_Localhost.PNG)
 
 ## Plans
 ### Web IDE
@@ -27,7 +27,7 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 
 ## Requirements
 - Install Docker client (See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file)
-- A Web Port Open
+- A Web Port Open (Default: port `80`)
 
 ## Installation
 - Pull Docker Images & Run the container using command line
