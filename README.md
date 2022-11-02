@@ -3,7 +3,9 @@ This is a repo for a FDG Project: *Implementation of Cloud & Dockerization Techn
 
 The goal is to deploy an IDE web app on local/remote server/VM using docker containers. Students in programming class can also access the IDE during the class and Q & A session.
 
-## Plan
+[]()
+
+## Plans
 ### Web IDE
 - Based on [Code Server](https://github.com/coder/code-server).
 - Support dependencies for different programming languages
@@ -14,21 +16,23 @@ The goal is to deploy an IDE web app on local/remote server/VM using docker cont
 - Based on [Coder](https://github.com/coder/coder).
 
 
-## images info
-| image | Tag | Description |
+## Images
+| Image | Tag | Description |
 | ------ | ----- | ----------- |
 | tisage/ide | test	| Testing |
 
 | image | Tag | Description |
 | ------ | ----- | ----------- |
-| tisage/coder | test	| Testing |
+| tisage/coder | test	| Still testing |
 
-## Requirement
-- Docker (See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file)
-- A Web Port
+## Requirements
+- Install Docker client (See [setup.md](https://github.com/tisage/Docker-IDE/blob/main/Setup.md) file)
+- A Web Port Open
 
 ## Installation
-Create a folder `ide` to mount
+- Pull Docker Images & Run the container using command line
+
+### Create a folder `ide` to mount
 `mkdir ide`
 
 Change the `YOUR_PASSWORD` which will be used to login the web app.
